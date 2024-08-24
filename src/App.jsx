@@ -8,7 +8,7 @@ const App = () => {
     // Simulate a data fetch
     setTimeout(() => {
       setLoading(false);
-    }, 1000); // 1-second delay to mimic data fetching
+    }, 1500); // 1.5-second delay to mimic data fetching
   }, []);
 
   return (
