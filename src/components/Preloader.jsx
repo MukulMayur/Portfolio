@@ -1,11 +1,7 @@
 import React from "react";
 
-const Preloader = () => {
-  return (
-    <div className="loaders">
-      <div class="loader"></div>
-    </div>
-  );
+const Preloader = (props) => {
+  return <div id={props.load ? "preloader" : "preloader-none"}></div>;
 };
 
 export default Preloader;
