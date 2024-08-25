@@ -1,7 +1,7 @@
 import React from "react";
 
 function Resume() {
-  return <div>Resume Page</div>;
+  return <div>Resume</div>;
 }
 
 export default Resume;
