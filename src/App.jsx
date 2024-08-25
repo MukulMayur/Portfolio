@@ -13,7 +13,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 1500); // 1.5-second delay for preloader
+    }, 1000); // 1-second delay for preloader
   }, []);
 
   return (
