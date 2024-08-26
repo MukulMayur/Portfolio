@@ -6,6 +6,7 @@ import Home from "./components/Home/Home.jsx";
 import About from "./components/About/About.jsx";
 import Projects from "./components/Projects/Projects.jsx";
 import Resume from "./components/Resume/Resume.jsx";
+import ScrollToTop from "./components/SrolltoTop.jsx";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -19,13 +20,16 @@ const App = () => {
   return (
     <Router>
       <Preloader load={loading} />
-      <Navbar />
-      <Routes>
-        <Route path="/Portfolio/" element={<Home />}></Route>
-        <Route path="/Portfolio/about" element={<About />}></Route>
-        <Route path="/Portfolio/projects" element={<Projects />}></Route>
-        <Route path="/Portfolio/resume" element={<Resume />}></Route>
-      </Routes>
+      <div className="App" id={loading ? "no-scroll" : "scroll"}>
+        <Navbar />
+        <ScrollToTop />
+        <Routes>
+          <Route path="/Portfolio/" element={<Home />}></Route>
+          <Route path="/Portfolio/about" element={<About />}></Route>
+          <Route path="/Portfolio/projects" element={<Projects />}></Route>
+          <Route path="/Portfolio/resume" element={<Resume />}></Route>
+        </Routes>
+      </div>
     </Router>
   );
 };
