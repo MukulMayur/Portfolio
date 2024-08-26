@@ -10,31 +10,31 @@ function Navbar() {
   const NAVBAR_LINK = [
     {
       id: 1,
-      path: "/portfolio",
+      path: "/Portfolio/",
       name: "Home",
       icon: MdHome,
     },
     {
       id: 2,
-      path: "/about",
+      path: "/Portfolio/about",
       name: "About",
       icon: FaUser,
     },
     {
       id: 3,
-      path: "/projects",
+      path: "/Portfolio/projects",
       name: "Projects",
       icon: LuCode2,
     },
     {
       id: 4,
-      path: "/resume",
+      path: "/Portfolio/resume",
       name: "Resume",
       icon: FaRegFileAlt,
     },
     {
       id: 5,
-      path: "/",
+      path: "/Portfolio/",
       name: "Blogs",
       icon: ImBlog,
     },
@@ -42,7 +42,7 @@ function Navbar() {
   return (
     <div className="p-3 bg-transparent fixed text-[#FFFFFF] w-full top-0 flex justify-around items-center">
       <div className="text-[#CB5EF4] text-3xl p-2 font-semibold cursor-pointer w-[10%] items-center justify-center flex">
-        <Link to={"/"}>MM</Link>
+        <Link to={"/Portfolio/"}>MM</Link>
       </div>
       <div className="w-[70%] flex items-center justify-end">
         <ul className="flex gap-10">

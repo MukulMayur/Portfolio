@@ -21,10 +21,10 @@ const App = () => {
       <Preloader load={loading} />
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/projects" element={<Projects />}></Route>
-        <Route path="/resume" element={<Resume />}></Route>
+        <Route path="/Portfolio/" element={<Home />}></Route>
+        <Route path="/Portfolio/about" element={<About />}></Route>
+        <Route path="/Portfolio/projects" element={<Projects />}></Route>
+        <Route path="/Portfolio/resume" element={<Resume />}></Route>
       </Routes>
     </Router>
   );
