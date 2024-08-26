@@ -22,7 +22,7 @@ function Home() {
             <TypewriterComponent />
           </div>
         </div>
-        <div class="card w-[60%] flex items-center justify-center">
+        <div className="card w-[60%] flex items-center justify-center">
           <div className="flex space-x-1 justify-betweeen items-center w-full">
             <div className="w-[30%] flex space-x-1.5">
               <div className="bg-red-500 rounded-full h-3 w-3"></div>

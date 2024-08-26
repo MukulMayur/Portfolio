@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { MdHome } from "react-icons/md";
 import { FaUser, FaRegFileAlt, FaRegStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -7,6 +7,20 @@ import { ImBlog } from "react-icons/im";
 import { AiOutlineGithub } from "react-icons/ai";
 
 function Navbar() {
+  const [isScrolled, setScrolled] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 20) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+  console.log(isScrolled);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   const NAVBAR_LINK = [
     {
       id: 1,
@@ -40,7 +54,11 @@ function Navbar() {
     },
   ];
   return (
-    <div className="p-3 bg-transparent fixed text-[#FFFFFF] w-full top-0 flex justify-around items-center">
+    <div
+      className={`p-3 bg-transparent fixed text-[#FFFFFF] w-full top-0 flex justify-around items-center z-10 transition-colors duration-300 ${
+        isScrolled ? " backdrop-blur-sm" : "bg-transparent"
+      }`}
+    >
       <div className="text-[#CB5EF4] text-3xl p-2 font-semibold cursor-pointer w-[10%] items-center justify-center flex">
         <Link to={"/Portfolio/"}>MM</Link>
       </div>

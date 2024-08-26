@@ -9,7 +9,22 @@ function Home2() {
           <span className="text-[#C16DE9]">INTRODUCE</span> <span>MYSELF</span>
         </div>
         <div>
-          <p>Hi</p>
+          <p>
+            I enjoy writing clean, efficient code to build
+            <span className="text-[#C16DE9]"> user-friendly interfaces</span>.
+          </p>
+          <p>
+            I'm a coder specializing in{" "}
+            <span className="text-[#C16DE9]">JavaScript, CSS and HTML.</span>.
+          </p>
+          <p>
+            My focus is on creating seamless{" "}
+            <span className="text-[#C16DE9]">web experiences </span>
+            through thoughtful and precise coding using{" "}
+            <span className="text-[#C16DE9]">
+              JavaScript tools like react, tailwind, node.js
+            </span>
+          </p>
         </div>
       </div>
     </div>
