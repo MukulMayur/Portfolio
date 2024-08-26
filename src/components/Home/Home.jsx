@@ -6,6 +6,8 @@ import { FaXTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import TypewriterComponent from "./TypeWriter";
 import Home2 from "./Home2";
+import SkillScroll from "./SkillScroll";
+import Footer from "./Footer";
 
 function Home() {
   return (
@@ -95,7 +97,7 @@ function Home() {
             </div>
           </div>
           <div className="flex items-center justify-center w-full space-x-4 mt-5">
-            <span>
+            <span className="transition-transform duration-200 transform hover:scale-110">
               <a
                 href="https://in.linkedin.com/in/mukul-mayur-98497821b"
                 target="_blank"
@@ -104,7 +106,7 @@ function Home() {
                 <FaLinkedin size={24} className="cursor-pointer" />
               </a>
             </span>
-            <span>
+            <span className="transition-transform duration-200 transform hover:scale-110">
               <a
                 href="https://github.com/MukulMayur"
                 target="_blank"
@@ -113,7 +115,7 @@ function Home() {
                 <FaGithub size={24} className="cursor-pointer" />
               </a>
             </span>
-            <span>
+            <span className="transition-transform duration-200 transform hover:scale-110">
               <a
                 href="https://x.com/mayur_muku91178"
                 target="_blank"
@@ -122,7 +124,7 @@ function Home() {
                 <FaXTwitter size={24} className="cursor-pointer" />
               </a>
             </span>
-            <span>
+            <span className="transition-transform duration-200 transform hover:scale-110">
               <a
                 href="mailto:mukulmayur000@gmail.com"
                 target="_blank"
@@ -136,6 +138,12 @@ function Home() {
       </div>
       <div>
         <Home2 />
+      </div>
+      <div>
+        <SkillScroll />
+      </div>
+      <div>
+        <Footer />
       </div>
     </>
   );
