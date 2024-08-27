@@ -45,7 +45,7 @@ function SkillScroll({ speed = 20 }) {
   return (
     <>
       <div className="font-semibold text-3xl text-[#C16DE9] mt-5 text-center">
-        SKILLS
+        TECH STACK
       </div>
       <div
         ref={scrollRef}
