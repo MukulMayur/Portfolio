@@ -15,7 +15,7 @@
     <img align="center" alt="" height="400px" width="100%" src="./Images/Doc.jpg"/>
 </p>
 
-:star: Star us on GitHub — it helps!
+⭐ **Star us on GitHub — it helps!** [![GitHub](https://img.shields.io/badge/-GitHub-181716?style=flat-square&logo=github)](https://github.com/MukulMayur/Portfolio)
 
 ## Features
 
