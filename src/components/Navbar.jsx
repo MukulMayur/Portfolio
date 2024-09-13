@@ -28,7 +28,7 @@ function Navbar() {
     { id: 2, path: "/Portfolio/about", name: "About", icon: FaUser },
     { id: 3, path: "/Portfolio/projects", name: "Projects", icon: LuCode2 },
     { id: 4, path: "/Portfolio/resume", name: "Resume", icon: FaRegFileAlt },
-    { id: 5, path: "/Portfolio/", name: "Blogs", icon: ImBlog },
+    { id: 5, path: "/Portfolio/blogs", name: "Blogs", icon: ImBlog },
   ];
 
   return (

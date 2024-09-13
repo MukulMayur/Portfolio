@@ -7,6 +7,7 @@ import About from "./components/About/About.jsx";
 import Projects from "./components/Projects/Projects.jsx";
 import Resume from "./components/Resume/Resume.jsx";
 import ScrollToTop from "./components/SrolltoTop.jsx";
+import Blogs from "./components/Blogs/Blogs.jsx";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/Portfolio/about" element={<About />}></Route>
           <Route path="/Portfolio/projects" element={<Projects />}></Route>
           <Route path="/Portfolio/resume" element={<Resume />}></Route>
+          <Route path="/Portfolio/blogs" element={<Blogs />}></Route>
         </Routes>
       </div>
     </Router>
