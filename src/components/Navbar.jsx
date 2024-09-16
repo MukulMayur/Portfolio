@@ -5,6 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 import { LuCode2 } from "react-icons/lu";
 import { ImBlog } from "react-icons/im";
 import { AiOutlineGithub } from "react-icons/ai";
+import { MdMiscellaneousServices } from "react-icons/md";
 
 function Navbar() {
   const [isScrolled, setScrolled] = useState(false);
@@ -28,7 +29,13 @@ function Navbar() {
     { id: 2, path: "/Portfolio/about", name: "About", icon: FaUser },
     { id: 3, path: "/Portfolio/projects", name: "Projects", icon: LuCode2 },
     { id: 4, path: "/Portfolio/resume", name: "Resume", icon: FaRegFileAlt },
-    { id: 5, path: "/Portfolio/blogs", name: "Blogs", icon: ImBlog },
+    {
+      id: 5,
+      path: "/Portfolio/services",
+      name: "Services",
+      icon: MdMiscellaneousServices,
+    },
+    { id: 6, path: "/Portfolio/blogs", name: "Blogs", icon: ImBlog },
   ];
 
   return (
