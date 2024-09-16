@@ -12,7 +12,10 @@ import Footer from "./Footer";
 function Home() {
   return (
     <>
-      <div className="h-screen text-[#CD5FF8] flex items-center justify-center w-full bg-transparent">
+      <div
+        className="h-screen text-[#CD5FF8] flex items-center justify-center w-full bg-transparent"
+        style={{ animation: "fadeIn 3s ease-in-out" }}
+      >
         <div className="w-[40%] flex flex-col items-center justify-start">
           <div className="flex flex-col space-y-2 justify-start w-full text-4xl text-white">
             <p>Hi There!</p>

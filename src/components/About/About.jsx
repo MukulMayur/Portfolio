@@ -5,7 +5,10 @@ function About() {
   const [active, setActive] = useState("skills");
 
   return (
-    <div className="flex space-x-2 text-center w-full  items-center justify-center mt-20">
+    <div
+      className="flex space-x-2 text-center w-full  items-center justify-center mt-20 "
+      style={{ animation: "fadeIn 2s ease-in-out" }}
+    >
       <div className="w-[50%] p-10 pl-20 flex items-center justify-center">
         <img src={aboutImage} alt="" className="rounded-2xl" />
       </div>

@@ -10,3 +10,12 @@ body {
   background-image: url(./assets/Wave.svg);
   height: 100vh;
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

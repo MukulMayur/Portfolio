@@ -17,7 +17,10 @@ import node from "../../assets/techIcons/node.svg";
 const Services = () => {
   return (
     <div className="flex space-x-2 items-center w-full justify-center mt-24 flex-col space-y-8 h-[90%] pb-20">
-      <div className="w-[60%] h-[250px] border-2 hover:border-red-500  rounded-xl flex items-center justify-between space-x-4 p-10 transition-transform duration-200 transform hover:scale-110 hover:bg-[#00194B]">
+      <div
+        className="w-[60%] h-[250px] border-2 hover:border-red-500  rounded-xl flex items-center justify-between space-x-4 p-10 transition-transform duration-200 transform hover:scale-110 hover:bg-[#00194B]"
+        style={{ animation: "fadeIn 1s ease-in-out" }}
+      >
         <div className="w-[30%]">
           <img src={Service_1} className="w-lg" />
         </div>
@@ -55,11 +58,14 @@ const Services = () => {
           </ul>
         </div>
       </div>
-      <div className="w-[60%] h-[250px] border-2 rounded-xl  hover:border-red-500  flex items-center justify-between space-x-4 p-10 transition-transform duration-200 transform hover:scale-110 hover:bg-[#00194B]">
+      <div
+        className="w-[60%] h-[250px] border-2 rounded-xl  hover:border-red-500  flex items-center justify-between space-x-4 p-10 transition-transform duration-200 transform hover:scale-110 hover:bg-[#00194B]"
+        style={{ animation: "fadeIn 2s ease-in-out" }}
+      >
         <div className="w-[30%]">
           <img src={Service_2} className="w-lg" />
         </div>
-        <div className="text-white w-[40%]">
+        <div className="text-white w-[40%] ">
           <p className="text-justify">
             Designing and building user interfaces that look great and are easy
             to use. Adding smooth animations and clear navigation to make sure
@@ -97,7 +103,10 @@ const Services = () => {
           </ul>
         </div>
       </div>
-      <div className="w-[60%] h-[250px] border-2  hover:border-red-500  rounded-xl flex items-center justify-between space-x-4 p-10 transition-transform duration-200 transform hover:scale-110 hover:bg-[#00194B] mb-20">
+      <div
+        className="w-[60%] h-[250px] border-2  hover:border-red-500  rounded-xl flex items-center justify-between space-x-4 p-10 transition-transform duration-200 transform hover:scale-110 hover:bg-[#00194B]"
+        style={{ animation: "fadeIn 4s ease-in-out" }}
+      >
         <div className="w-[30%]">
           <img src={Service_3} className="w-lg" />
         </div>
