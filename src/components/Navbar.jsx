@@ -35,7 +35,7 @@ function Navbar() {
       name: "Services",
       icon: MdMiscellaneousServices,
     },
-    { id: 6, path: "/Portfolio/blogs", name: "Blogs", icon: ImBlog },
+    // { id: 6, path: "/Portfolio/blogs", name: "Blogs", icon: ImBlog },
   ];
 
   return (
