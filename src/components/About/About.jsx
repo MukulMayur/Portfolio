@@ -10,7 +10,11 @@ function About() {
       style={{ animation: "fadeIn 2s ease-in-out" }}
     >
       <div className="w-[50%] p-10 pl-20 flex items-center justify-center">
-        <img src={aboutImage} alt="" className="rounded-2xl" />
+        <img
+          src={aboutImage}
+          alt=""
+          className="rounded-2xl shadow-[0_3px_12px_0px_#CB5AEB]"
+        />
       </div>
       <div className="w-[50%] flex justify-start p-10 pr-20 flex-col space-y-3 text-white">
         <h1 className="text-purple-500 flex justify-start text-3xl font-bold">

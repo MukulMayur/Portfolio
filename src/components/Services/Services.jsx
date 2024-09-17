@@ -18,7 +18,7 @@ const Services = () => {
   return (
     <div className="flex space-x-2 items-center w-full justify-center mt-24 flex-col space-y-8 h-[90%] pb-20">
       <div
-        className="w-[60%] h-[250px] border-2 hover:border-red-500  rounded-xl flex items-center justify-between space-x-4 p-10 transition-transform duration-200 transform hover:scale-110 hover:bg-[#00194B]"
+        className="w-[60%] h-[250px] border-2 hover:border-red-500  rounded-xl flex items-center justify-between space-x-4 p-10 transition-transform duration-200 transform hover:scale-110 hover:bg-[#00194B] shadow-[0_3px_12px_0px_#CB5AEB]"
         style={{ animation: "fadeIn 1s ease-in-out" }}
       >
         <div className="w-[30%]">
@@ -59,7 +59,7 @@ const Services = () => {
         </div>
       </div>
       <div
-        className="w-[60%] h-[250px] border-2 rounded-xl  hover:border-red-500  flex items-center justify-between space-x-4 p-10 transition-transform duration-200 transform hover:scale-110 hover:bg-[#00194B]"
+        className="w-[60%] h-[250px] border-2 rounded-xl  hover:border-red-500  flex items-center justify-between space-x-4 p-10 transition-transform duration-200 transform hover:scale-110 hover:bg-[#00194B] shadow-[0_3px_12px_0px_#CB5AEB]"
         style={{ animation: "fadeIn 2s ease-in-out" }}
       >
         <div className="w-[30%]">
@@ -104,7 +104,7 @@ const Services = () => {
         </div>
       </div>
       <div
-        className="w-[60%] h-[250px] border-2  hover:border-red-500  rounded-xl flex items-center justify-between space-x-4 p-10 transition-transform duration-200 transform hover:scale-110 hover:bg-[#00194B]"
+        className="w-[60%] h-[250px] border-2  hover:border-red-500  rounded-xl flex items-center justify-between space-x-4 p-10 transition-transform duration-200 transform hover:scale-110 hover:bg-[#00194B] shadow-[0_3px_12px_0px_#CB5AEB]"
         style={{ animation: "fadeIn 4s ease-in-out" }}
       >
         <div className="w-[30%]">
