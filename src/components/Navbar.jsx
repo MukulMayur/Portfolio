@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { MdHome } from "react-icons/md";
 import { FaUser, FaRegFileAlt, FaRegStar } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
@@ -9,8 +9,9 @@ import { HiMenu } from "react-icons/hi";
 
 function Navbar() {
   const [isScrolled, setScrolled] = useState(false);
-  const location = useLocation(); // Get the current path
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation(); // Get the current path
+  const navbarRef = useRef(null);
 
   const handleScroll = () => {
     if (window.scrollY > 20) {
@@ -24,9 +25,19 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
 
+  const handleClickOutside = (event) => {
+    if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, []);
 
   const NAVBAR_LINK = [
@@ -48,14 +59,15 @@ function Navbar() {
       className={`md:p-3 px-10 pt-3 pb-3 md:mt-0 py-2 bg-transparent fixed text-[#FFFFFF] w-full top-0 flex justify-between md:justify-around items-center z-10 transition-colors duration-300 ${
         isScrolled ? "backdrop-blur-sm bg-opacity-70" : "bg-transparent"
       }`}
+      ref={navbarRef}
     >
       <div className="text-[#CB5EF4] text-3xl p-2 font-semibold cursor-pointer w-[10%] items-center justify-center flex">
         <Link to={"/Portfolio/"}>MM</Link>
       </div>
       <div
         className={`${
-          isOpen ? "flex " : "hidden"
-        } sm:flex flex-col sm:flex-row w-full  sm:w-auto items-center justify-center p-4 sm:p-0 absolute  sm:static top-[100%] left-0 sm:top-auto sm:left-auto z-50 transition-all duration-500 ease-in-out bg-[#00194ad4] md:bg-transparent bg-cover bg-center md:bg-none `}
+          isOpen ? "flex" : "hidden"
+        } sm:flex flex-col sm:flex-row w-full sm:w-auto items-center justify-center p-4 sm:p-0 absolute sm:static top-[100%] left-0 sm:top-auto sm:left-auto z-50 transition-all duration-500 ease-in-out bg-[#00194aea] md:bg-transparent bg-cover bg-center md:bg-none`}
       >
         <ul className="flex flex-col sm:flex-row sm:gap-10 gap-2 text-center sm:text-left sm:items-center rounded-lg">
           {NAVBAR_LINK.map((link, index) => (
