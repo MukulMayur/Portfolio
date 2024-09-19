@@ -45,7 +45,7 @@ function Navbar() {
 
   return (
     <div
-      className={`md:p-3 px-5 py-2 bg-transparent fixed text-[#FFFFFF] w-full top-0 flex justify-between md:justify-around items-center z-10 transition-colors duration-300 ${
+      className={`md:p-3 px-10 mt-4 md:mt-0 py-2 bg-transparent fixed text-[#FFFFFF] w-full top-0 flex justify-between md:justify-around items-center z-10 transition-colors duration-300 ${
         isScrolled ? "backdrop-blur-sm bg-opacity-70" : "bg-transparent"
       }`}
     >
@@ -55,7 +55,7 @@ function Navbar() {
       <div
         className={`${
           isOpen ? "flex " : "hidden"
-        } sm:flex flex-col sm:flex-row w-full sm:w-auto items-center justify-center p-4 sm:p-0 absolute  sm:static top-[100%] left-0 sm:top-auto sm:left-auto z-50 transition-all duration-500 ease-in-out bg-[url('./Wave.svg')] bg-cover bg-center md:bg-[url(./src/assets/)]`}
+        } sm:flex flex-col sm:flex-row w-full  sm:w-auto items-center justify-center p-4 sm:p-0 absolute  sm:static top-[100%] left-0 sm:top-auto sm:left-auto z-50 transition-all duration-500 ease-in-out bg-[#00194ad4] md:bg-transparent bg-cover bg-center md:bg-none `}
       >
         <ul className="flex flex-col sm:flex-row sm:gap-10 gap-2 text-center sm:text-left sm:items-center rounded-lg">
           {NAVBAR_LINK.map((link, index) => (
