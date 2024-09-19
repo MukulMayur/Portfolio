@@ -1,4 +1,11 @@
 import React from "react";
+import { pdfjs } from "react-pdf";
+import { IoMdCloudDownload } from "react-icons/io";
+import PdfComp from "../../PdfComp";
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  "pdfjs-dist/build/pdf.worker.min.mjs",
+  import.meta.url
+).toString();
 
 const pdf = "https://mukulmayur.github.io/Portfolio/Resume.pdf";
 
@@ -13,17 +20,17 @@ function Resume() {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex flex-col justify-center items-center md:h-screen h-full lg:mt-[520px] mt-[70px] md:space-y-8 gap-y-4 ">
       <div className="text-center">
-        <h2 className="text-2xl font-bold mb-4 text-white">
-          Download My Resume
-        </h2>
         <button
           onClick={() => downloadFile(pdf)}
-          className="bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition-all"
+          className="bg-blue-500 text-white flex items-center gap-2 font-semibold py-2 px-4 rounded hover:bg-blue-600 transition-all"
         >
-          Download Resume
+          Download Resume <IoMdCloudDownload size={24} />
         </button>
+      </div>
+      <div className="flex items-center justify-center  mb-0">
+        <PdfComp />
       </div>
     </div>
   );
