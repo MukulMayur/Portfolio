@@ -5,7 +5,7 @@ import { Projects_Info } from "./ProjectInfo";
 function Projects() {
   return (
     <div
-      className="grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 mt-20 md:px-32 px-16"
+      className="grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 mt-20 md:px-32 px-4"
       style={{ animation: "fadeIn 2s ease-in-out" }}
     >
       {Projects_Info.map((project) => (

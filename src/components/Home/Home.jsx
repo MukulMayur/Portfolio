@@ -13,7 +13,7 @@ function Home() {
   return (
     <>
       <div
-        className="h-screen text-[#CD5FF8] flex items-center justify-center w-full bg-transparent"
+        className="h-screen text-[#CD5FF8] flex md:flex-row flex-col items-center justify-center w-full bg-transparent"
         style={{ animation: "fadeIn 3s ease-in-out" }}
       >
         <div className="w-[40%] flex flex-col items-center justify-start">

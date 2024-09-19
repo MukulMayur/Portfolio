@@ -6,17 +6,17 @@ function About() {
 
   return (
     <div
-      className="flex space-x-2 text-center w-full  items-center justify-center mt-20 "
+      className="flex md:flex-row flex-col space-x-2 md:text-center w-full  md:items-center md:justify-center mt-20 "
       style={{ animation: "fadeIn 2s ease-in-out" }}
     >
-      <div className="w-[50%] p-10 pl-20 flex items-center justify-center">
+      <div className="md:w-[50%] w-full px-10 md:pl-20 flex items-center justify-center">
         <img
           src={aboutImage}
           alt=""
           className="rounded-2xl shadow-[0_3px_12px_0px_#CB5AEB]"
         />
       </div>
-      <div className="w-[50%] flex justify-start p-10 pr-20 flex-col space-y-3 text-white">
+      <div className="md:w-[50%] w-full flex justify-start p-10 pr-20 flex-col space-y-3 text-white">
         <h1 className="text-purple-500 flex justify-start text-3xl font-bold">
           About Me
         </h1>
@@ -72,50 +72,50 @@ function About() {
         <div className="mt-5 h-[380px] overflow-hidden">
           {active === "skills" && (
             <div className="space-y-3">
-              <div className="flex flex-col items-start text-justify">
+              <div className="flex flex-col items-start md:text-justify">
                 <div className="text-pink-800 font-semibold text-sm">UI/UX</div>
                 <div>Designing Web Application.</div>
               </div>
-              <div className="flex flex-col items-start text-justify">
+              <div className="flex flex-col items-start md:text-justify">
                 <div className="text-pink-800 font-semibold text-sm">React</div>
                 <div>Developing interactive UIs.</div>
               </div>
-              <div className="flex flex-col items-start text-justify">
+              <div className="flex flex-col items-start md:text-justify">
                 <div className="text-pink-800 font-semibold text-sm">
                   JavaScript
                 </div>
                 <div>Implementing dynamic functionality.</div>
               </div>
-              <div className="flex flex-col items-start text-justify">
+              <div className="flex flex-col items-start md:text-justify">
                 <div className="text-pink-800 font-semibold text-sm">CSS</div>
                 <div>Styling and layout.</div>
               </div>
-              <div className="flex flex-col items-start text-justify">
+              <div className="flex flex-col items-start md:text-justify">
                 <div className="text-pink-800 font-semibold text-sm">Git</div>
                 <div>Version control and collaboration.</div>
               </div>
-              <div className="flex flex-col items-start text-justify">
+              <div className="flex flex-col items-start md:text-justify">
                 <div className="text-pink-800 font-semibold text-sm">
                   Responsive Design
                 </div>
                 <div>Creating layouts adaptable to all devices.</div>
               </div>
-              <div className="flex flex-col items-start text-justify">
+              <div className="flex flex-col items-start md:text-justify">
                 <div className="text-pink-800 font-semibold text-sm">APIs</div>
                 <div>Fetching and manipulating data.</div>
               </div>
             </div>
           )}
           {active === "experience" && (
-            <div className="space-y-3">
-              <div className="flex flex-col items-start text-justify">
-                <div className="text-pink-800 font-semibold text-sm">
+            <div className="md:space-y-3 space-y-6">
+              <div className="flex flex-col items-start md:text-justify">
+                <div className="text-pink-800 font-semibold md:text-md text-sm space-y-2">
                   Aug-2023-Present{" "}
                   <span className="text-purple-500">(Brane Group)</span>
                 </div>
                 <div>Associate Process Leader</div>
               </div>
-              <div className="flex flex-col items-start text-justify">
+              <div className="flex flex-col items-start md:text-justify">
                 <div className="text-pink-800 font-semibold text-sm">
                   Feb-2023 to Aug-2023{" "}
                   <span className="text-purple-500">(Brane Group)</span>
@@ -126,7 +126,7 @@ function About() {
           )}
           {active === "education" && (
             <div className="space-y-3">
-              <div className="flex flex-col items-start text-justify">
+              <div className="flex flex-col items-start md:text-justify">
                 <div className="text-pink-800 font-semibold text-sm">
                   Graduation - <span className="text-orange-400">BE</span> in{" "}
                   <span className="text-orange-400">
@@ -135,7 +135,7 @@ function About() {
                 </div>
                 <div>Dayananda Sagar College of Engineering.</div>
               </div>
-              <div className="flex flex-col items-start text-justify">
+              <div className="flex flex-col items-start md:text-justify">
                 <div className="text-pink-800 font-semibold text-sm">
                   Class 10th & 12th
                 </div>

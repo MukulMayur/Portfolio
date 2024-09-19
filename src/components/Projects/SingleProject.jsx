@@ -6,7 +6,7 @@ const SingleProject = ({ project }) => {
   return (
     <div
       key={project.id}
-      className="border-2 border-gray-400 hover:border-red-500 rounded-xl  px-2 md:px-4 py-2 m-4 relative hover:shadow-xl text-white text-center transition duration-300 hover:scale-105 hover:bg-[#00194B] shadow-[0_3px_12px_0px_#CB5AEB]"
+      className="border-2 border-gray-400 hover:border-red-500 rounded-xl  px-2 md:px-4 py-2 m-4 relative hover:shadow-xl text-white text-center transition duration-300 md:hover:scale-105 hover:bg-[#00194B] shadow-[0_3px_12px_0px_#CB5AEB]"
     >
       <img
         src={project.project_img}

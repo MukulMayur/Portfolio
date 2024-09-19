@@ -18,13 +18,13 @@ const Services = () => {
   return (
     <div className="flex space-x-2 items-center w-full justify-center mt-24 flex-col space-y-8 h-[90%] pb-20">
       <div
-        className="md:w-[60%] w-[85%] md:h-[250px] h-[320px] border-2 hover:border-red-500  rounded-xl flex items-center justify-between space-x-4 md:p-10 p-4 transition-transform duration-200 transform hover:scale-110 hover:bg-[#00194B] shadow-[0_3px_12px_0px_#CB5AEB]"
+        className="md:w-[60%] w-[85%] md:h-[250px] h-[550px] border-2 hover:border-red-500  rounded-xl flex flex-col md:flex-row items-center justify-between md:space-x-4 md:p-10 p-4 transition-transform duration-200 transform md:hover:scale-110 hover:bg-[#00194B] shadow-[0_3px_12px_0px_#CB5AEB] space-y-4 md:space-y-0"
         style={{ animation: "fadeIn 1s ease-in-out" }}
       >
-        <div className="w-[20%]">
+        <div className="md:w-[20%] w-[50%]">
           <img src={Service_1} className="w-lg" />
         </div>
-        <div className="text-white w-[40%]">
+        <div className="text-white  md:w-[40%] w-[90%]">
           <p className="text-justify">
             Building user-friendly, responsive layouts to ensure a smooth and
             easy user experience on any device. The design adjusts to fit all
@@ -59,14 +59,14 @@ const Services = () => {
         </div>
       </div>
       <div
-        className="md:w-[60%] w-[85%] md:h-[250px] h-[350px] border-2 rounded-xl  hover:border-red-500  flex items-center justify-between space-x-4 p-10 transition-transform duration-200 transform hover:scale-110 hover:bg-[#00194B] shadow-[0_3px_12px_0px_#CB5AEB]"
+        className="md:w-[60%] w-[85%] md:h-[250px] h-[600px] border-2 rounded-xl  hover:border-red-500  flex items-center md:flex-row flex-col justify-between md:space-x-4 md:p-10 p-4 md:pt-0 pt-8 md:pb-0 pb-8 transition-transform duration-200 transform md:hover:scale-110 hover:bg-[#00194B] shadow-[0_3px_12px_0px_#CB5AEB] space-y-4 md:space-y-0"
         style={{ animation: "fadeIn 2s ease-in-out" }}
       >
-        <div className="w-[20%]">
+        <div className="md:w-[20%] w-[50%]">
           <img src={Service_2} className="w-lg" />
         </div>
-        <div className="text-white w-[50%] ">
-          <p className="text-justify">
+        <div className="text-white  md:w-[40%] w-[90%] ">
+          <p className="text-justify md:mt-0 mt-4">
             Designing and building user interfaces that look great and are easy
             to use. Adding smooth animations and clear navigation to make sure
             users have a pleasant and interactive experience. Every detail is
@@ -104,13 +104,13 @@ const Services = () => {
         </div>
       </div>
       <div
-        className="md:w-[60%] w-[85%]  md:h-[250px] h-[350px] border-2  hover:border-red-500  rounded-xl flex items-center justify-between space-x-4 p-10 transition-transform duration-200 transform hover:scale-110 hover:bg-[#00194B] shadow-[0_3px_12px_0px_#CB5AEB]"
+        className="md:w-[60%] w-[85%]  md:h-[250px] h-[600px] border-2  hover:border-red-500  rounded-xl flex items-center md:flex-row flex-col justify-between md:space-x-4 md:p-10 p-4 md:pt-0 pt-8 md:pb-0 pb-8 transition-transform duration-200 transform md:hover:scale-110 hover:bg-[#00194B] shadow-[0_3px_12px_0px_#CB5AEB] space-y-4 md:space-y-0"
         style={{ animation: "fadeIn 4s ease-in-out" }}
       >
-        <div className="w-[20%]">
+        <div className="md:w-[20%] w-[50%]">
           <img src={Service_3} className="w-lg" />
         </div>
-        <div className="text-white w-[60%]">
+        <div className="text-white md:w-[40%] w-[90%]">
           <p className="text-justify">
             Adding third-party APIs to websites and apps to include new features
             and improve functionality. This means connecting with services like
