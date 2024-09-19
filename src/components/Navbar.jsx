@@ -45,7 +45,7 @@ function Navbar() {
 
   return (
     <div
-      className={`md:p-3 px-10 mt-4 md:mt-0 py-2 bg-transparent fixed text-[#FFFFFF] w-full top-0 flex justify-between md:justify-around items-center z-10 transition-colors duration-300 ${
+      className={`md:p-3 px-10 pt-3 pb-3 md:mt-0 py-2 bg-transparent fixed text-[#FFFFFF] w-full top-0 flex justify-between md:justify-around items-center z-10 transition-colors duration-300 ${
         isScrolled ? "backdrop-blur-sm bg-opacity-70" : "bg-transparent"
       }`}
     >
@@ -83,7 +83,7 @@ function Navbar() {
           ))}
         </ul>
       </div>
-      <div className="w-[20%] md:w-[10%] flex items-center justify-center gap-5">
+      <div className="w-[25%] md:w-[10%] flex items-center justify-center gap-8">
         <Link to={"https://github.com/MukulMayur/Portfolio"}>
           <button className="flex space-x-1 bg-[#6e38a4] p-2 rounded px-4 border-[1px] border-gray-600 cursor-pointer hover:bg-[#643b8d] transition-transform duration-200 transform hover:scale-105">
             <span>
@@ -94,8 +94,8 @@ function Navbar() {
             </span>
           </button>
         </Link>
-        <button className="sm:hidden flex" onClick={toggleMenu}>
-          <HiMenu size={24} />
+        <button className="sm:hidden flex mr-2 " onClick={toggleMenu}>
+          <HiMenu size={28} />
         </button>
       </div>
     </div>
