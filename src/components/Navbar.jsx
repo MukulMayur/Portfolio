@@ -55,7 +55,7 @@ function Navbar() {
       <div
         className={`${
           isOpen ? "flex " : "hidden"
-        } sm:flex flex-col sm:flex-row w-full sm:w-auto items-center justify-center p-4 sm:p-0 absolute  sm:static top-[100%] left-0 sm:top-auto sm:left-auto z-50 transition-all duration-500 ease-in-out bg-[url('./src/assets/Wave.svg')]  bg-cover bg-center md:bg-[url(./)]`}
+        } sm:flex flex-col sm:flex-row w-full sm:w-auto items-center justify-center p-4 sm:p-0 absolute  sm:static top-[100%] left-0 sm:top-auto sm:left-auto z-50 transition-all duration-500 ease-in-out bg-[url('./Wave.svg')] bg-cover bg-center md:bg-[url(./src/assets/)]`}
       >
         <ul className="flex flex-col sm:flex-row sm:gap-10 gap-2 text-center sm:text-left sm:items-center rounded-lg">
           {NAVBAR_LINK.map((link, index) => (
