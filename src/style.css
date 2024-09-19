@@ -84,3 +84,10 @@
   background: rgba(222, 130, 235, 0.911);
   border-radius: 12px;
 }
+@media (max-width: 639px) {
+  .small-screen-bg {
+    background-image: url("/assets/Wave.svg");
+    background-size: cover;
+    background-position: center;
+  }
+}

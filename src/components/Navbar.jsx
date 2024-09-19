@@ -3,13 +3,14 @@ import { MdHome } from "react-icons/md";
 import { FaUser, FaRegFileAlt, FaRegStar } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import { LuCode2 } from "react-icons/lu";
-import { ImBlog } from "react-icons/im";
 import { AiOutlineGithub } from "react-icons/ai";
 import { MdMiscellaneousServices } from "react-icons/md";
+import { HiMenu } from "react-icons/hi";
 
 function Navbar() {
   const [isScrolled, setScrolled] = useState(false);
   const location = useLocation(); // Get the current path
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleScroll = () => {
     if (window.scrollY > 20) {
@@ -17,6 +18,10 @@ function Navbar() {
     } else {
       setScrolled(false);
     }
+  };
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
   };
 
   useEffect(() => {
@@ -40,15 +45,19 @@ function Navbar() {
 
   return (
     <div
-      className={`p-3 bg-transparent fixed text-[#FFFFFF] w-full top-0 flex justify-around items-center z-10 transition-colors duration-300 ${
-        isScrolled ? "backdrop-blur-sm" : "bg-transparent"
+      className={`md:p-3 px-5 py-2 bg-transparent fixed text-[#FFFFFF] w-full top-0 flex justify-between md:justify-around items-center z-10 transition-colors duration-300 ${
+        isScrolled ? "backdrop-blur-sm bg-opacity-70" : "bg-transparent"
       }`}
     >
       <div className="text-[#CB5EF4] text-3xl p-2 font-semibold cursor-pointer w-[10%] items-center justify-center flex">
         <Link to={"/Portfolio/"}>MM</Link>
       </div>
-      <div className="w-[70%] flex items-center justify-end">
-        <ul className="flex gap-10">
+      <div
+        className={`${
+          isOpen ? "flex " : "hidden"
+        } sm:flex flex-col sm:flex-row w-full sm:w-auto items-center justify-center p-4 sm:p-0 absolute  sm:static top-[100%] left-0 sm:top-auto sm:left-auto z-50 transition-all duration-500 ease-in-out bg-[url('./src/assets/Wave.svg')]  bg-cover bg-center md:bg-[url(./)]`}
+      >
+        <ul className="flex flex-col sm:flex-row sm:gap-10 gap-2 text-center sm:text-left sm:items-center rounded-lg">
           {NAVBAR_LINK.map((link, index) => (
             <li key={index}>
               <Link
@@ -59,7 +68,7 @@ function Navbar() {
                     : "text-white"
                 }`}
               >
-                <div className="relative group p-2 pr-0 text-xl font-bold cursor-pointer flex items-center justify-center space-x-2">
+                <div className="relative group p-2 md:space-x-2 font-bold cursor-pointer flex items-center justify-center">
                   {React.createElement(link.icon, {
                     color:
                       location.pathname === link.path
@@ -67,16 +76,16 @@ function Navbar() {
                         : "currentColor",
                   })}
                   <span>{link.name}</span>
-                  <span className="underline absolute bottom-0 left-0 w-full h-0.5 bg-purple-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left p-0.5 rounded-full"></span>
+                  <span className="underline absolute bottom-0 left-0 w-full h-0.5 bg-purple-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-full"></span>
                 </div>
               </Link>
             </li>
           ))}
         </ul>
       </div>
-      <div className="w-[10%] flex flex-center justify-start">
+      <div className="w-[20%] md:w-[10%] flex items-center justify-center gap-5">
         <Link to={"https://github.com/MukulMayur/Portfolio"}>
-          <button className="flex space-x-1 bg-[#6e38a4] p-[5px] rounded px-[15px] border-[1px] border-gray-600 cursor-pointer hover:bg-[#643b8d] transition-transform duration-200 transform hover:scale-105">
+          <button className="flex space-x-1 bg-[#6e38a4] p-2 rounded px-4 border-[1px] border-gray-600 cursor-pointer hover:bg-[#643b8d] transition-transform duration-200 transform hover:scale-105">
             <span>
               <AiOutlineGithub size={20} />
             </span>
@@ -85,6 +94,9 @@ function Navbar() {
             </span>
           </button>
         </Link>
+        <button className="sm:hidden flex" onClick={toggleMenu}>
+          <HiMenu size={24} />
+        </button>
       </div>
     </div>
   );
