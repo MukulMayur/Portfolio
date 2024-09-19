@@ -56,14 +56,14 @@ function SkillScroll({ speed = 20 }) {
           {[...items, ...items].map((item, index) => (
             <div
               key={index}
-              className="p-10 w-44 transition-colors duration-300 backdrop-blur-[10px] rounded shadow-md flex flex-col items-center justify-center space-y-2 "
+              className="md:p-10 p-8 pt-6 pb-6 md:w-44 w-28 transition-colors duration-300 backdrop-blur-[10px] rounded shadow-md flex flex-col items-center justify-center space-y-2 "
             >
               <img
                 src={item.image}
                 alt={item.name}
                 className="transition-transform duration-200 transform hover:scale-110"
               />
-              <p className="text-white text-lg font-mono font-semibold">
+              <p className="text-white md:text-lg text-sm font-mono font-semibold">
                 {item.name}
               </p>
             </div>

@@ -6,15 +6,15 @@ import { MdEmail } from "react-icons/md";
 
 function Footer() {
   return (
-    <div className="w-full p-4 flex justify-between items-center mt-10 transition-colors duration-300 backdrop-blur-[4px]">
-      <div className="text-white w-[33%] flex items-center justify-center space-x-2">
+    <div className="w-full p-4 flex md:flex-row flex-col md:justify-between justify-start items-center mt-10 transition-colors duration-300 backdrop-blur-[4px] md:space-y-0 space-y-2 md:pb-4 pb-8">
+      <div className="text-white md:w-[33%] flex items-center justify-center space-x-2">
         <span>Design & Development :</span>
         <strong className="text-[#C16DE9]">Mukul Mayur</strong>
       </div>
-      <div className="text-white w-[33%] flex justify-center items-center">
+      <div className="text-white md:w-[33%] flex md:justify-center justify-start items-center">
         © 2024 Mukul Mayur
       </div>
-      <div className="flex space-x-6 text-white items-center w-[34%] justify-center">
+      <div className="flex space-x-6 text-white items-center md:w-[34%] w-full justify-center">
         <span className="transition-transform duration-200 transform hover:scale-110">
           <a
             href="https://in.linkedin.com/in/mukul-mayur-98497821b"

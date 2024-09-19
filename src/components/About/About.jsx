@@ -9,7 +9,7 @@ function About() {
       className="flex md:flex-row flex-col space-x-2 md:text-center w-full  md:items-center md:justify-center mt-20 "
       style={{ animation: "fadeIn 2s ease-in-out" }}
     >
-      <div className="md:w-[50%] w-full px-10 md:pl-20 flex items-center justify-center">
+      <div className="md:w-[50%] w-full p-10 md:pl-20 flex items-center justify-center">
         <img
           src={aboutImage}
           alt=""
