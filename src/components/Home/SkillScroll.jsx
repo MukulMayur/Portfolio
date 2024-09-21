@@ -1,20 +1,20 @@
 import React, { useEffect, useRef } from "react";
-import react from "../../assets/techIcons/react.svg";
-import html from "../../assets/techIcons/html.svg";
-import css from "../../assets/techIcons/css.svg";
-import tailwind from "../../assets/techIcons/tailwind.svg";
-import git from "../../assets/techIcons/git.svg";
-import github from "../../assets/techIcons/github.svg";
-import js from "../../assets/techIcons/js.svg";
-import vscode from "../../assets/techIcons/vscode.svg";
-import node from "../../assets/techIcons/node.svg";
+import reactIcon from "../../assets/TechIcons/react.svg";
+import html from "../../assets/TechIcons/html.svg";
+import css from "../../assets/TechIcons/css.svg";
+import tailwind from "../../assets/TechIcons/tailwind.svg";
+import git from "../../assets/TechIcons/git.svg";
+import github from "../../assets/TechIcons/github.svg";
+import js from "../../assets/TechIcons/js.svg";
+import vscode from "../../assets/TechIcons/vscode.svg";
+import node from "../../assets/TechIcons/node.svg";
 
 function SkillScroll({ speed = 20 }) {
   const items = [
     { name: "HTML5", image: html },
     { name: "CSS3", image: css },
     { name: "JAVASCRIPT", image: js },
-    { name: "REACT", image: react },
+    { name: "REACT", image: reactIcon },
     { name: "NODE", image: node },
     { name: "TAILWIND CSS", image: tailwind },
     { name: "GIT", image: git },
