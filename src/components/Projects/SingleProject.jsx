@@ -13,7 +13,9 @@ const SingleProject = ({ project }) => {
         className="w-full mt-5 rounded-xl flex items-center justify-center h-44"
       />
       <h1 className="m-4 text-3xl text-[#CB5AEB]">{project.title}</h1>
-      <p className="text-justify px-3">{project.description}</p>
+      <p className="text-justify px-3 h-56 overflow-y-auto">
+        {project.description}
+      </p>
       <div className="flex space-x-4 items-center justify-center mt-6 mb-5">
         <Link to={project.github} target="_blank">
           <button className="flex justify-center items-center gap-2 bg-[#c04aeb98] px-3 py-1.5  rounded-md hover:bg-[#9429bb98]">
