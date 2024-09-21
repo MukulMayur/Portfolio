@@ -2,17 +2,16 @@ import React from "react";
 import Service_1 from "/src/assets/Services_1.png";
 import Service_2 from "/src/assets/Services_2.png";
 import Service_3 from "/src/assets/Services_3.png";
-import react from "../../assets/techIcons/react.svg";
-import html from "../../assets/techIcons/html.svg";
-import css from "../../assets/techIcons/css.svg";
-import tailwind from "../../assets/techIcons/tailwind.svg";
-import npm from "../../assets/techIcons/npm.svg";
-import figma from "../../assets/techIcons/figma.svg";
-import git from "../../assets/techIcons/git.svg";
-import github from "../../assets/techIcons/github.svg";
-import js from "../../assets/techIcons/js.svg";
-import vscode from "../../assets/techIcons/vscode.svg";
-import node from "../../assets/techIcons/node.svg";
+import reactIcon from "../../assets/TechIcons/react.svg";
+import html from "../../assets/TechIcons/html.svg";
+import css from "../../assets/TechIcons/css.svg";
+import tailwind from "../../assets/TechIcons/tailwind.svg";
+import npm from "../../assets/TechIcons/npm.svg";
+import figma from "../../assets/TechIcons/figma.svg";
+import git from "../../assets/TechIcons/git.svg";
+import github from "../../assets/TechIcons/github.svg";
+import js from "../../assets/TechIcons/js.svg";
+import node from "../../assets/TechIcons/node.svg";
 
 const Services = () => {
   return (
@@ -49,7 +48,7 @@ const Services = () => {
             </li>
             <li className="flex items-center justify-start gap-2">
               <p>React.js</p>
-              <img src={react} className="w-[20px]" />
+              <img src={reactIcon} className="w-[20px]" />
             </li>
             <li className="flex items-center justify-start gap-2">
               <p>Tailwind css</p>
@@ -78,7 +77,7 @@ const Services = () => {
           <ul className="space-y-1 mt-2 text-slate-300">
             <li className="flex items-center justify-start gap-2">
               <p>React</p>
-              <img src={react} className="w-[20px]" />
+              <img src={reactIcon} className="w-[20px]" />
             </li>
             <li className="flex items-center justify-start gap-2">
               <p>Tailwind</p>
@@ -124,7 +123,7 @@ const Services = () => {
           <ul className="space-y-1 mt-2 text-slate-300">
             <li className="flex items-center justify-start gap-2">
               <p>React</p>
-              <img src={react} className="w-[20px]" />
+              <img src={reactIcon} className="w-[20px]" />
             </li>
             <li className="flex items-center justify-start gap-2">
               <p>Javascript</p>
