@@ -9,6 +9,7 @@ import Resume from "./components/Resume/Resume.jsx";
 import ScrollToTop from "./components/SrolltoTop.jsx";
 import Blogs from "./components/Blogs/Blogs.jsx";
 import Services from "./components/Services/Services.jsx";
+import PageNotFound from "./PageNotFound.jsx";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -32,6 +33,7 @@ const App = () => {
           <Route path="/Portfolio/resume" element={<Resume />}></Route>
           {/* <Route path="/Portfolio/blogs" element={<Blogs />}></Route> */}
           <Route path="/Portfolio/services" element={<Services />}></Route>
+          <Route path="/*" element={<PageNotFound />} />
         </Routes>
       </div>
     </Router>
