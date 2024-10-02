@@ -7,7 +7,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   import.meta.url
 ).toString();
 
-const pdf = "https://mukulmayur.github.io/Portfolio/Resume.pdf";
+const pdf = "https://mukulmayur.github.io/Portfolio/Mukul_Resume.pdf";
 
 function Resume() {
   const downloadFile = (url) => {
