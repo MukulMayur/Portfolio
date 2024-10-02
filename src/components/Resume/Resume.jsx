@@ -20,7 +20,7 @@ function Resume() {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center md:h-screen h-full lg:mt-[520px] mt-[70px] md:space-y-8 gap-y-4 ">
+    <div className="flex flex-col justify-center items-center md:h-screen h-full lg:mt-[500px] mt-[70px] md:space-y-8 gap-y-4 ">
       <div className="text-center">
         <button
           onClick={() => downloadFile(pdf)}
