@@ -10,7 +10,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 ).toString();
 
 // Dynamic URL for the resume PDF
-const pdfUrl = "/Portfolio/src/assets/Resume.pdf"; // Relative path for production
+const pdfUrl = "https://mukulmayur.github.io/Portfolio/Resume.pdf"; // Relative path for production
 
 function Resume() {
   const downloadFile = (url) => {
