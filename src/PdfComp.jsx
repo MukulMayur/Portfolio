@@ -23,7 +23,7 @@ function PdfComp() {
     setNumPages(numPages);
   }
 
-  const scale = windowWidth > 786 ? 1.7 : 0.6;
+  const scale = windowWidth > 1024 ? 2.0 : windowWidth > 768 ? 1.5 : 0.7;
 
   return (
     <div className="pdf-viewer lg:mb-10 ">
